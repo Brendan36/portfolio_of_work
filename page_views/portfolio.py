@@ -78,8 +78,8 @@ def show():
         """
         st.write("*Background music:*")
         st.markdown(audio_player_base64, unsafe_allow_html=True)
-        st.write("*Artist:* Xavier Rudd")
-        st.write("*Song:* We Deserve to Dream")
+        st.write("*Artist: Xavier Rudd*")
+        st.write("*Song: We Deserve to Dream*")
 
     st.markdown("---")
 
