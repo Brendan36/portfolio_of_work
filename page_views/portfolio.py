@@ -66,7 +66,7 @@ def show():
         st.caption("A growing clean & playful overview of tools, automations, and impact-driven apps.")
         st.caption("*- All projects in different phases of development -*")
     with col2:
-        audio_file_path = "C:/Users/Dell/PycharmProjects/app2-portfolio/We Deserve To Dream.mp3"
+        audio_file_path = "assets/We Deserve To Dream.mp3"
         with open(audio_file_path, "rb") as f:
             audio_bytes = f.read()
             audio_base64 = base64.b64encode(audio_bytes).decode()
