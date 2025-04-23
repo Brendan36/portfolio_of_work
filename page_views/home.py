@@ -1,53 +1,94 @@
 import streamlit as st
+from streamlit import caption
+
+from utils.toast_manager import handle_redirect_toast
 
 
 def show():
+    handle_redirect_toast()
+    params = st.query_params
+    if params.get("page", [""])[0] == "contact":
+        st.session_state["redirect_page"] = "📧 Contact me"
+        st.session_state["redirected_from"] = "🏠 Home"
+        # clear it so we only fire once
+        st.experimental_set_query_params()
+        st.rerun()
+
     # Logo Header
-    st.image("assets/logo_be_chrome_dark.png", width=300)
-    st.markdown("<h2 style='color:#D3D3D3;'>| be | your best</h2>", unsafe_allow_html=True)
+    st.image("assets/logo_smile_silver.png", width=300)
+    # st.markdown("<h2 style='color:#D3D3D3;'>| be | your best</h2>", unsafe_allow_html=True)
+
+    # st.markdown("---")
+
+    # Wellcome Section
+    st.markdown("## 🌱 Welcome")
 
     st.markdown("---")
-
-    # Welcome Section
-    st.markdown("### 🌱 Welcome to the be_labs ecosystem")
-    st.markdown("""
-    A platform suite built to inspire clarity, fairness, and action.  
-    Rooted in truth. Designed for transparency. Powered by you.
-
-    **Explore the tools:**
-    """)
-
-    # Visual Navigation with Columns
-    col1, col2, col3 = st.columns(3)
-
+    col1, col2 = st.columns(2)
+    # About callout
     with col1:
-        st.image("assets/logo_smile_blue.png", width=120)
-        st.markdown("#### 🌍 | be | me")
-        st.write("Uncover truth. Ignite change.")
-        st.button("Go to | be | me", on_click=lambda: st.session_state.update({'page': '🌍 | be | me'}))
+        st.markdown("### 🔍 Find out about me?")
+        st.write("Check my bio and learn more about my work aspirations.")
+
+        if st.button("Go to About "):
+            st.session_state["redirect_page"] = "🔍 About"
+            st.session_state["redirected_from"] = "🏠 Home"
+            st.rerun()
 
     with col2:
-        st.image("assets/logo_be_fair_playful.png", width=120)
-        st.markdown("#### 🧠 | be | fair")
-        st.write("Decode bias. Filter noise.")
-        st.button("Go to | be | fair", on_click=lambda: st.session_state.update({'page': '🧠 | be | fair'}))
+        # Portfolio callout
+        st.markdown("### 🧰 Want to see my builds?")
+        st.write("Check out my Streamlit apps, Python projects, and more.")
 
-    with col3:
-        st.image("assets/logo_be_your_best_bold.png", width=120)
-        st.markdown("#### 💰 | be | money wise")
-        st.write("Invest with purpose.")
-        st.button("Go to | be | money wise", on_click=lambda: st.session_state.update({'page': '💰 | be | money wise'}))
+        if st.button("Go to Portfolio "):
+            st.session_state["redirect_page"] = "📂 Portfolio"
+            st.session_state["redirected_from"] = "🏠 Home"
+            st.rerun()
 
+   #  st.markdown("---")
+   #
+   #  st.markdown("""
+   #      *Explore be labs think-tank tools in production*
+   #      """)
+   # # Visual Navigation with Columns
+   #  col1, col2, col3 = st.columns(3)
+   #
+   #  with col1:
+   #      st.image("assets/logo_be_fair_playful.png", width=120)
+   #      st.markdown("#### 🌍 | be | me")
+   #      st.write("*... empowered & authentic*")
+   #      st.write("Uncover truth. Ignite change.")
+   #      st.write("choose")
+   #      st.button("| be | me", on_click=lambda: st.session_state.update({'page': '🌍 | be | me'}))
+   #
+   #  with col2:
+   #      st.image("assets/logo_smile_blue.png", width=120)
+   #      st.markdown("#### 🧠 | be | fair")
+   #      st.write("*... because truth matters*")
+   #      st.write("Decode bias. Filter noise.")
+   #      st.write("choose")
+   #      st.button("| be | fair", on_click=lambda: st.session_state.update({'page': '🧠 | be | fair'}))
+   #
+   #  with col3:
+   #      st.image("assets/logo_be_your_best_bold.png", width=120)
+   #      st.markdown("#### 💰 | be | money wise")
+   #      st.write("*... ethical investing, redefined*")
+   #      st.write("Invest with purpose.")
+   #      st.write("choose")
+   #      st.button("| be | money wise", on_click=lambda: st.session_state.update({'page': '💰 | be | money wise'}))
+   #
+
+    # ─── Footer ───
     st.markdown("---")
-
-    # Portfolio callout
-    st.markdown("### 🧰 Want to see my builds?")
-    st.write("Check out Streamlit apps, Python projects, and more.")
-    st.button("Go to Portfolio", on_click=lambda: st.session_state.update({'page': '📂 Portfolio'}))
-
-    # Footer
-    st.markdown("---")
-    st.markdown(
-        "<p style='text-align:center;color:gray;'>Built with 💡 by Brendan | © 2025 | be |</p>",
-        unsafe_allow_html=True
-    )
+    col1, col2, col3 = st.columns([1, 2, 1])
+    footer_html = """
+        <p style="text-align:center; color:gray; font-size:0.8em; margin:0;">
+          Built with 💡 by | be | © 2025
+        </p>
+        <p style="text-align:center; color:gray; font-size:0.8em; margin:0;">
+         <a href="?page=about"     target="_self" style="color:gray; text-decoration:none;">| about</a> |
+         <a href="?page=portfolio" target="_self" style="color:gray; text-decoration:none;">portfolio</a> |
+         <a href="?page=contact"   target="_self" style="color:gray; text-decoration:none;">contact</a> | 
+        </p>
+        """
+    col2.markdown(footer_html, unsafe_allow_html=True)
