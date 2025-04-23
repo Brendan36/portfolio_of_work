@@ -1,7 +1,7 @@
 title;description;url;image;tags;category;featured
 
 Todo App;A distraction-free web app to help you create tasks so that you can focus on completing them.;https://github.com/Brendan36/To-Do-Web-App.git;1.png;Streamlit;Web App;
-Portfolio Website;That's this website built in Python to showcase coding projects and apps that I'm working on and towards completing.;https://github.com/Brendan36/Portfolio.git;2.png;Streamlit;Web App;
+Portfolio Website;That's this website built in Python to showcase coding projects and apps that I'm working on and towards completing.;https://github.com/Brendan36/portfolio_of_work.git;2.png;Streamlit;Web App;
 PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/Brendan36/PDF_Writer.git;3.png;PDF;Productivity App;
 PDF Invoices;A script that reads invoice records from structured Excel files and automatically generates PDF invoices.;https://github.com/Brendan36/Excel_Invoice_to_PDF.git;4.png;PDF;Productivity App;
 Good News;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://example.com/;5.png;API;AI;
