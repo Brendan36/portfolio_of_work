@@ -44,7 +44,6 @@ def show():
         st.rerun()
 
     # Logo Header
-    st.set_page_config(page_icon="be_labs/assets/small_logo_be_smile_white.png")
     st.image("assets/logo_be_chrome_dark.png", width=300)
     # st.markdown("<h2 style='color:#D3D3D3;'>| be | your best</h2>", unsafe_allow_html=True)
 

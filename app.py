@@ -9,7 +9,6 @@ st.set_page_config(
     layout="wide",
     page_icon="be_labs/assets/small_logo_be_smile_white.png",
 )
-st.set_page_config(page_icon="be_labs/assets/small_logo_be_smile_white.png")
 
 # 1) Handle any footer‐link clicks via query‐param:
 params = st.query_params
