@@ -1,5 +1,3 @@
-from idlelib.configdialog import font_sample_text
-
 import streamlit as st
 from utils.toast_manager import handle_redirect_toast
 
