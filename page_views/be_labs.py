@@ -44,6 +44,7 @@ def show():
         st.rerun()
 
     # Logo Header
+    st.set_page_config(page_icon="be_labs/assets/small_logo_be_smile_white.png")
     st.image("assets/logo_be_chrome_dark.png", width=300)
     # st.markdown("<h2 style='color:#D3D3D3;'>| be | your best</h2>", unsafe_allow_html=True)
 
@@ -87,11 +88,17 @@ def show():
     # Visual Navigation with Columns
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.button("🌍 | be | me", on_click=lambda: st.toast("🌍 | be | me - coming soon!"))
+        if st.button("🌍 | be | me"):
+            st.info("Coming soon... we're building something amazing!")
+        # st.button("🌍 | be | me", on_click=lambda: st.toast("🌍 | be | me - coming soon!"))
     with col2:
-        st.button("🧠 | be | fair", on_click=lambda: st.toast('🧠 | be | fair - coming soon!'))
+        if st.button("🧠 | be | fair"):
+            st.info("Coming soon... we're building something amazing!")
+        # st.button("🧠 | be | fair", on_click=lambda: st.toast('🧠 | be | fair - coming soon!'))
     with col3:
-        st.button("💰 | be | money wise", on_click=lambda: st.toast('💰 | be | money wise - coming soon!'))
+        if st.button("💰 | be | money wise"):
+            st.info("Coming soon... we're building something amazing!")
+        # st.button("💰 | be | money wise", on_click=lambda: st.toast('💰 | be | money wise - coming soon!'))
 
     st.markdown("---")
 
