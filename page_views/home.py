@@ -35,7 +35,7 @@ def show():
     with col2:
         # Portfolio callout
         st.markdown("### 🧰 Want to see my builds?")
-        st.write("Check out my Streamlit apps, Python projects, and more.")
+        st.write("Check out my apps, Python projects, and more.")
 
         if st.button("Go to Portfolio "):
             st.session_state["redirect_page"] = "📂 Portfolio"

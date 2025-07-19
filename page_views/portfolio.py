@@ -130,7 +130,7 @@ def show():
                 col1, col2 = st.columns([2, 1])
 
             with col1:
-                st.markdown("<div class='project-card'>", unsafe_allow_html=True)
+                # st.markdown("<div class='project-card'>", unsafe_allow_html=True)
                 st.subheader(row['title'])
                 st.markdown(f"<p style='font-size:15px'>{row['description']}</p>", unsafe_allow_html=True)
 
