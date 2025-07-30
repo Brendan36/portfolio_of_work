@@ -1,5 +1,5 @@
 title;description;url;image;tags;category;featured
 
-WhatsApp QA Tester;A web app that allows users to test WhatsApp's features and report bugs.; https://github.com/Brendan36/whatsapp_tester.git;whatsapptester.png;Automation;WhatsApp Web App;
 Employee Retention SimulatorApp;A web app that allows users to simulate employee retention.;https://employee-retention-simulator.streamlit.app/;employee_retention_simulator.png;Data Analysis;Streamlit Web App;
+WhatsApp QA Tester;A web app that allows users to test WhatsApp's features and report bugs.; https://github.com/Brendan36/whatsapp_tester.git;whatsapptester.png;Automation;WhatsApp Web App;
 Portfolio Website;That's this website built in Python to showcase coding projects and apps that I'm working on and towards completing.;https://github.com/Brendan36;2.png;Streamlit;Web App;
