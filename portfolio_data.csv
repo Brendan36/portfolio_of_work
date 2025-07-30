@@ -1,22 +1,5 @@
 title;description;url;image;tags;category;featured
 
-Todo App;A distraction-free web app to help you create tasks so that you can focus on completing them.;https://github.com/Brendan36;1.png;Streamlit;Web App;
+WhatsApp QA Tester;A web app that allows users to test WhatsApp's features and report bugs.; https://github.com/Brendan36/whatsapp_tester.git; whatsapptester.png;Automation;WhatsApp Web App;
+Employee Retention SimulatorApp;A web app that allows users to simulate employee retention.;https://employee-retention-simulator.streamlit.app/;employee_retention_simulator.png;Streamlit;Web App;
 Portfolio Website;That's this website built in Python to showcase coding projects and apps that I'm working on and towards completing.;https://github.com/Brendan36;2.png;Streamlit;Web App;
-PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/Brendan36;3.png;PDF;Productivity App;
-PDF Invoices;A script that reads invoice records from structured Excel files and automatically generates PDF invoices.;https://github.com/Brendan36;4.png;PDF;Productivity App;
-Good News;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://github.com/Brendan36;5.png;API;AI;
-Climate Change API;A REST API built with Python and Flask to serve historical weather data for various cities, and to analyze the data to calculate the rate of climate change.;https://github.com/Brendan36;6.png;API;AI;
-Download's Folder Cleaner;A script that monitors the Downloads folder and deletes old files keeping the folder clean.;https://github.com/Brendan36;7.png;Automation;Productivity App;
-Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://github.com/Brendan36;8.png;Scraping;Productivity App;
-Helper Chatbot;A chatbot that knows about a specific topic and answers questions regarding that topic. (The focal point being sustainability.);https://github.com/Brendan36;9.png;Chatbot;AI;
-Open Domain Chatbot;A chatbot built that can discuss anything with a human and is built using the Facebook API.;https://github.com/Brendan36;10.png;Chatbot;AI;
-Webcam Motion Detector;A program that monitors the computer webcam and sends an email when a new object enters the view.;https://github.com/Brendan36;11.png;CCTV;Security;
-Typing Analyzer;A program that monitors the computer keyboard and returns the most typed words of the session.;https://github.com/Brendan36;12.png;Typing;Productivity App;
-Internet Speed Analysis;A program that records the internet speed every few seconds and plots the values on the browser.;https://github.com/Brendan36;13.png;Internet;Productivity App;
-Monitoring Data;A program that monitors particular websites and periodically records the data to a remote server.;https://github.com/Brendan36;14.png;Scraping;Productivity App;
-Visualizing Data;A program that visualizes the data collected from some of the more trusted sources utilized in the monitoring program. ;https://github.com/Brendan36;15.png;Data;Productivity App;
-Visualizing Weather Forecast;A data web app that visualizes the weather forecast for the next five days of any city, compared the same day of the previous years, and forcast for the years to come.;https://github.com/Brendan36;16.png;Weather;AI;
-Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;https://github.com/Brendan36;17.png;Desktop;Productivity App;
-School Management System;A desktop PyQt6 GUI app for managing complex university data with an SQL database backend.;https://github.com/Brendan36;18.png;Desktop;Productivity App;
-Restaurateur;A Django web app to let customers see a restaurant menu and meal availability, while highlighting the eco-friendly options.;https://github.com/Brendan36;19.png;Django;Ecommerce;
-Online Store;A Django online store app where users can place orders directly with sustainable products from sellers who are transparent about their sustainability practices.;https://github.com/Brendan36;20.png;Django;Ecommerce;
